@@ -1,0 +1,110 @@
+/* nền tổng */
+body {
+  background: #f4f5f7;
+  font-family: Arial, sans-serif;
+}
+
+/* container */
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* card chính */
+.card {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* tiêu đề */
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* 🔥 GRID 3 CỘT */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* từng field */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* label */
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* input + select */
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* focus đẹp hơn */
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+
+/* button */
+.btn-primary {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+/* hover */
+.btn-primary:hover {
+  background: #d6d6d6;
+}
+
+/* lỗi */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* 📱 responsive (mobile về 1 cột) */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.btn-secondary {
+  margin-left: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.history {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.history-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
